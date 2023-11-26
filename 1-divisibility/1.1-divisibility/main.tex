@@ -1,0 +1,41 @@
+\documentclass[11pt]{article}
+
+\usepackage{sectsty}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{float}
+\usepackage{amssymb}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{example}{Example}
+
+% Margins
+
+
+\begin{document}
+
+\section*{The Division Algorithm}
+
+\begin{theorem}
+  For any positive integers $a$ and $b$ there exists a unique pair of $(q, r)$ of nonnegative integers such that $$b = aq + r ,\ r < a$$
+\end{theorem}
+
+\begin{example}
+  Prove that for all positive integers $n$, the fraction $$\frac{21n + 4}{14n + 3}$$ is irreducible.
+\end{example}
+\noindent Let $k = gcd(21n + 4, 14n + 3)$, then
+
+\begin{align*}
+  21n + 4 \equiv 0 \pmod{k} \\
+  14n + 3 \equiv 0 \pmod{k} \\
+\end{align*}
+Multiplying the first equation by 2 an the second by 3 to match the coefficients of $n$
+
+\begin{align*}
+  42n + 8 \equiv 0 \pmod{k} \\
+  42n + 9 \equiv 0 \pmod{k}
+\end{align*}
+$42n + 8$ and $42n + 9$ are consecutive integers and hence coprime, it then follows that $k = 1$.
+
+\end{document}
